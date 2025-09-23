@@ -7,6 +7,36 @@ var currentAnswer = "Honorable Donald Trump";
 
 var canClick = false;
 
+var selectionLabel;
+var options = [];
+
+function update(){
+
+}
+
+function pickRandom(){
+    let keys = Object.keys(cards);
+    let values = Object.values(cards);
+
+    console.log(data);
+
+    let random = Math.random();
+    random = Math.round(random * keys.length-1);
+    console.log(random);
+        
+    currentSelection = keys[random];
+    currentAnswer = values[random];
+
+    console.log(keys[random]);
+    console.log(values[random]);
+
+
+    let randomOption1 = values[Math.random() * values.length-1];
+    let randomOption2 = values[Math.round(Math.random * keys.length-1)];
+
+    update();
+}
+
 function getCards(){
  fetch(DEFAULT_CARDS)
     .then(response => {
@@ -18,9 +48,8 @@ function getCards(){
     .then(data => {
         cards = data;
 
-        let random = Math.random()
-        random = random * cards.length-1;
-        console.log(random);
+        pickRandom();
+        
         canClick = true;
     })
     .catch(error => {
