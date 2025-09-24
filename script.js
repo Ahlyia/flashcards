@@ -88,13 +88,14 @@ function buttonClicked(choice,button){
     console.log("clicked!")
     console.log(choice,button);
 
-    if (choice == correctChoice){
+    if (choice == correctChoice || button.textContent == currentAnswer){
         bodyElement.style.backgroundColor = "lime";
     } else {
         bodyElement.style.backgroundColor = "red";
     }
     setTimeout(() => {
-        window.location.reload();
+        bodyElement.style.backgroundColor = "white";
+        pickRandom();
     },1000);
 }
 

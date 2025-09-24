@@ -1,5 +1,7 @@
 {
-  "President": "Honorable Donald Trump",
+  "title": "Canyon AFJROTC Flashcards",
+  
+  "set": {"President": "Honorable Donald Trump",
   "Vice President": "Honorable J.D. Vance",
   "Secretary of Defense": "Honorable Pete Hegseth",
   "Secretary of the Air Force": "Honorable Dr. Troy E. Meink",
@@ -24,5 +26,5 @@
   "Corps Alpha Squadron Commander": "C/MSgt Andee Inskeep",
   "Corps Bravo Squadron Commander": "C/A1C Elena Azcuy",
   "Corps Charlie Squadron Commander": "C/1st Lt Tehann Green",
-  "Corps Operations Squadron Commander": "C/SrA Jullian Sierra"
+  "Corps Operations Squadron Commander": "C/SrA Jullian Sierra"}
 }
