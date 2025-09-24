@@ -73,7 +73,7 @@ function getCards(){
         return response.json();
     })
     .then(data => {
-        cards = data;
+        cards = data.set;
 
         pickRandom();
         
